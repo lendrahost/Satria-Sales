@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satria Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Satria Sales</a></h1>
+            </div>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- CTA Buttons -->
+
+        </div>
+    </header>
+      <!-- JavaScript to Toggle Menu on Mobile -->
+      <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Contact & Support Section -->
+    <section class="contact-support">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact & Support</h2>
+                <p>Kami Hadir Untuk Membantu Anda. Hubungi kami untuk info lebih lanjut.</p>
+                <div class="info-item">
+                    <h4>Phone</h4>
+                    <p>085338123934</p>
+                </div>
+                <div class="info-item">
+                    <h4>Email</h4>
+                    <p>muhammadsatriawibawa932@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h4>Address</h4>
+                    <p>nusa tenggara barat Mataram Lombok</p>
+                </div>
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" class="social-link">Facebook</a>
+                    <a href="https://x.com/?lang=en" class="social-link">X</a>
+                    <a href="https://www.instagram.com/" class="social-link">Instagram</a>
+                    <a href="https://www.linkedin.com/" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Kirimkan kami pesan</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Tulis Tesan" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

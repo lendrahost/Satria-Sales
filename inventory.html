@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satria Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Satria Sales</a></h1>
+            </div>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- CTA Buttons -->
+
+        </div>
+    </header>
+      <!-- JavaScript to Toggle Menu on Mobile -->
+      <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+    
+        <!-- Search and Filter Section -->
+        <section class="search-filter">
+            <h2>Asset yang kamu cari</h2>
+            <form class="search-form">
+                <!-- Search Input -->
+                <input type="text" placeholder="cari berdasarkan model, atau kata kunci" class="search-input">
+    
+                <!-- Filters -->
+                <select class="filter-dropdown">
+                    <option value="">pilih Model</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">manual</option>
+                    <option value="truck">methic</option>
+                    <option value="electric">Electric</option>
+                </select>
+    
+                <select class="filter-dropdown">
+                    <option value="">kisaran harga</option>
+                    <option value="under-20k">dibawah 10 juta</option>
+                    <option value="20k-50k">10 juta - 20 juta</option>
+                    <option value="50k-80k">20 juta - 35 juta</option>
+                    <option value="80k-plus">diatas 50 juta</option>
+                </select>
+    
+                <select class="filter-dropdown">
+                    <option value="">tipe asset</option>
+                    <option value="new">motor</option>
+                    <option value="used">mobil</option>
+                    <option value="certified">rumah</option>
+                </select>
+    
+                <!-- Search Button -->
+                <button type="submit" class="search-btn">cari</button>
+            </form>
+        </section>
+
+     <!-- Vehicle Showcase Section -->
+     <section class="vehicle-showcase">
+        <h2>Featured Vehicles</h2>
+        <div class="vehicle-grid">
+            <!-- Vehicle Card 1 -->
+            <div class="vehicle-card">
+                <img src="WhatsApp Image 2024-11-05 at 17.55.08.jpeg" alt="Car Model 1">
+                <h3>PCX 160</h3>
+                <p>Powerful and sleek, with advanced safety features and a dynamic design.</p>
+                <span class="price">$45,000</span>
+                <a href="#details" class="details-btn">View Details</a>
+            </div>
+            <!-- Vehicle Card 2 -->
+            <div class="vehicle-card">
+                <img src="WhatsApp Image 2024-11-05 at 18.22.38.jpeg" alt="Car Model 2">
+                <h3>2023 Tesla Model 3</h3>
+                <p>Electric luxury with cutting-edge technology and exceptional range.</p>
+                <span class="price">$55,000</span>
+                <a href="#details" class="details-btn">View Details</a>
+            </div>
+            <!-- Vehicle Card 3 -->
+            <div class="vehicle-card">
+                <img src="WhatsApp Image 2024-11-05 at 18.41.50.jpeg" alt="Car Model 3">
+                <h3>Rumah Murah by Hikkari Garden</h3>
+                <p>Ultimate driving machine with refined performance and premium comfort.</p>
+                <span class="price">$70,000</span>
+                <a href="#details" class="details-btn">View Details</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

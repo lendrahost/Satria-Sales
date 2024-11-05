@@ -1,0 +1,783 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+    background-color: #0A2E47;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo h1 a {
+    color: #fff;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #F0A500;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-btn {
+    background-color: #F0A500;
+    color: #0A2E47;
+}
+
+.login-btn:hover {
+    background-color: #D48C00;
+}
+
+.signup-btn {
+    background-color: #ffffff;
+    color: #0A2E47;
+    border: 2px solid #F0A500;
+}
+
+.signup-btn:hover {
+    background-color: #F0A500;
+    color: #ffffff;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        width: 100%;
+        padding: 10px;
+        background-color: #0A2E47;
+    }
+
+    /* Display the mobile menu when active */
+    .navbar.active ul {
+        display: flex;
+    }
+
+    /* Center logo on mobile */
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Show the hamburger menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Stack CTA buttons below the menu */
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('Coconut7squat_make_a_image_a_hand_shaking_fae78687-7735-407d-93e8-4cc60f70769f.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* Overlay */
+.hero-overlay {
+    background: rgba(10, 46, 71, 0.7); /* Dark overlay with business theme */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content */
+.hero-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Headline */
+.hero-content h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Subheadline */
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* CTA Button */
+.cta-btn {
+    background-color: #F0A500; /* Accent color */
+    color: #0A2E47;
+    padding: 12px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #D48C00;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Vehicle Showcase Section */
+.vehicle-showcase {
+    padding: 60px 20px;
+    background-color: #0A2E47; /* Light gray background for contrast */
+    text-align: center;
+}
+
+.vehicle-showcase h2 {
+    font-size: 2em;
+    color: #0A2E47;
+    margin-bottom: 30px;
+}
+
+/* Vehicle Grid */
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Vehicle Card */
+.vehicle-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.vehicle-card h3 {
+    color: #0A2E47;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.vehicle-card p {
+    font-size: 1em;
+    color: #555555;
+    margin: 10px 0;
+}
+
+.vehicle-card .price {
+    color: #F0A500; /* Accent color for price */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Details Button */
+.details-btn {
+    background-color: #0A2E47;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #073140;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .vehicle-card h3 {
+        font-size: 1.3em;
+    }
+
+    .vehicle-card p {
+        font-size: 0.9em;
+    }
+
+    .details-btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Promotional Banner Section */
+.promo-banner {
+    background-color: #0A2E47; /* Business theme: dark navy */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-banner::before {
+    content: "";
+    background-image: url('https://example.com/promo-bg.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.promo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.promo-content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.promo-content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.promo-btn {
+    background-color: #F0A500; /* Accent color */
+    color: #0A2E47;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.promo-btn:hover {
+    background-color: #D48C00;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .promo-content h2 {
+        font-size: 1.8em;
+    }
+
+    .promo-content p {
+        font-size: 1em;
+    }
+
+    .promo-btn {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Search and Filter Section */
+.search-filter {
+    padding: 50px 20px;
+    background-color: #0A2E47; /* Light gray background for contrast */
+    text-align: center;
+}
+
+.search-filter h2 {
+    font-size: 2em;
+    color: #ffffff; /* Business theme: dark navy */
+    margin-bottom: 30px;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.search-input, .filter-dropdown, .search-btn {
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+/* Search Input */
+.search-input {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Filter Dropdowns */
+.filter-dropdown {
+    flex: 1 1 200px;
+    max-width: 250px;
+    color: #0A2E47;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.filter-dropdown:hover, .search-input:focus {
+    border-color: #F0A500; /* Accent color */
+}
+
+/* Search Button */
+.search-btn {
+    background-color: #F0A500; /* Accent color */
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    max-width: 150px;
+}
+
+.search-btn:hover {
+    background-color: #D48C00;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-input, .filter-dropdown, .search-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 50px 20px;
+    background-color: #f4f4f9; /* Light gray background for contrast */
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 2em;
+    color: #0A2E47; /* Business theme: dark navy */
+    margin-bottom: 30px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Benefit Card */
+.benefit-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    color: #0A2E47;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.benefit-card p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .benefit-card h3 {
+        font-size: 1.3em;
+    }
+
+    .benefit-card p {
+        font-size: 0.9em;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Contact & Support Section */
+.contact-support {
+    padding: 50px 20px;
+    background-color: #f4f4f9; /* Light gray background for contrast */
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #0A2E47; /* Business theme: dark navy */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item h4 {
+    font-size: 1.1em;
+    color: #0A2E47;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 1em;
+    color: #555555;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #0A2E47;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #F0A500;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    color: #0A2E47;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #0A2E47;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #F0A500; /* Accent color */
+}
+
+.submit-btn {
+    background-color: #F0A500; /* Accent color */
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #D48C00;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0A2E47; /* Business theme: dark navy */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    color: #F0A500; /* Accent color */
+    margin-bottom: 15px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin: 10px 0;
+}
+
+.footer-links a, .footer-contact a, .footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-contact a:hover, .footer-social a:hover {
+    color: #F0A500; /* Accent color on hover */
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #F0A500; /* Accent color */
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    color: #cccccc; /* Lighter gray for copyright text */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links, .footer-contact, .footer-social {
+        text-align: center;
+    }
+}

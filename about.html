@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satria Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Satria Sales</a></h1>
+            </div>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+
+            </div>
+        </div>
+    </header>
+      <!-- JavaScript to Toggle Menu on Mobile -->
+      <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+     <!-- Benefits Section -->
+     <section class="benefits-section">
+        <h2>Kenapa Harus Beli Asset Dari Kami?</h2>
+        <div class="benefits-grid">
+            <!-- Benefit 1 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="Coconut7squat_make_a_image_a_hand_shaking_fae78687-7735-407d-93e8-4cc60f70769f.png" alt="Flexible Financing">
+                </div>
+                <h3>Flexible Financing</h3>
+                <p>Get access to competitive rates and multiple financing options tailored to your needs.</p>
+            </div>
+            <!-- Benefit 2 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="Coconut7squat_make_a_image_a_hand_shaking_fae78687-7735-407d-93e8-4cc60f70769f.png" alt="Extended Warranty">
+                </div>
+                <h3>Extended Warranty</h3>
+                <p>Enjoy peace of mind with our comprehensive warranty plans for new and pre-owned vehicles.</p>
+            </div>
+            <!-- Benefit 3 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="Coconut7squat_make_a_image_a_hand_shaking_fae78687-7735-407d-93e8-4cc60f70769f.png" alt="After-Sales Service">
+                </div>
+                <h3>Reliable After-Sales Service</h3>
+                <p>Our expert team is here to support you with maintenance and repairs whenever you need.</p>
+            </div>
+            <!-- Benefit 4 -->
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <img src="Coconut7squat_make_a_image_a_hand_shaking_fae78687-7735-407d-93e8-4cc60f70769f.png" alt="Quality Assurance">
+                </div>
+                <h3>Quality Assurance</h3>
+                <p>All vehicles undergo a rigorous inspection process to ensure they meet the highest standards.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
