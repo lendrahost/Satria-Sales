@@ -39,70 +39,76 @@
         }
     </script>
     
-        <!-- Search and Filter Section -->
-        <section class="search-filter">
-            <h2>Asset yang kamu cari</h2>
-            <form class="search-form">
-                <!-- Search Input -->
-                <input type="text" placeholder="cari berdasarkan model, atau kata kunci" class="search-input">
-    
-                <!-- Filters -->
-                <select class="filter-dropdown">
-                    <option value="">pilih Model</option>
-                    <option value="suv">manual</option>
-                    <option value="truck">methic</option>
-                    <option value="electric">Electric</option>
-                </select>
-    
-                <select class="filter-dropdown">
-                    <option value="">kisaran harga</option>
-                    <option value="under-20k">dibawah 30 juta</option>
-                    <option value="20k-50k">30 juta - 50 juta</option>
-                    <option value="50k-80k">100 juta - 250 juta</option>
-                    <option value="80k-plus">diatas 250 juta</option>
-                </select>
-    
-                <select class="filter-dropdown">
-                    <option value="">tipe asset</option>
-                    <option value="new">motor</option>
-                    <option value="used">mobil</option>
-                    <option value="certified">rumah</option>
-                </select>
-    
-                <!-- Search Button -->
-                <button type="submit" class="search-btn">cari</button>
-            </form>
-        </section>
-
-     <!-- Vehicle Showcase Section -->
-     <section class="vehicle-showcase">
-        <h2>Featured Vehicles</h2>
-        <div class="vehicle-grid">
-            <!-- Vehicle Card 1 -->
-            <div class="vehicle-card">
-                <img src="WhatsApp Image 2024-11-05 at 17.55.08.jpeg" alt="Car Model 1">
-                <h3>PCX 160</h3>
-                <p>Powerful and sleek, with advanced safety features and a dynamic design.</p>
-                <span class="price">$45,000</span>
-                <a href="#details" class="details-btn">View Details</a>
-            </div>
-            <!-- Vehicle Card 2 -->
-            <div class="vehicle-card">
-                <img src="WhatsApp Image 2024-11-05 at 18.22.38.jpeg" alt="Car Model 2">
-                <h3>2023 Tesla Model 3</h3>
-                <p>Electric luxury with cutting-edge technology and exceptional range.</p>
-                <span class="price">$55,000</span>
-                <a href="#details" class="details-btn">View Details</a>
-            </div>
-            <!-- Vehicle Card 3 -->
-            <div class="vehicle-card">
-                <img src="WhatsApp Image 2024-11-05 at 18.41.50.jpeg" alt="Car Model 3">
-                <h3>Rumah Murah by Hikkari Garden</h3>
-                <p>Ultimate driving machine with refined performance and premium comfort.</p>
-                <span class="price">$70,000</span>
-                <a href="#details" class="details-btn">View Details</a>
-            </div>
-        </div>
+         <!-- Search and Filter Section -->
+    <section class="search-filter-section">
+        <input type="text" id="searchBar" placeholder="Search by Make or Model">
+        <select id="makeFilter">
+            <option value="">Semua Asset</option>
+            <option value="Toyota">Motor</option>
+            <option value="Ford">Mobil</option>
+            <option value="Honda">Rumah</option>
+        </select>
+        <select id="priceFilter">
+            <option value="">Semua Harga</option>
+            <option value="under-20000">Dibawah 30JT</option>
+            <option value="20000-40000">30JT - 100JT</option>
+            <option value="over-40000">Diatas 100JT</option>
+        </select>
+        <button id="filterBtn">Cari</button>
     </section>
+
+    <!-- Vehicle Showcase Section -->
+    <section class="vehicle-showcase">
+        <div class="vehicle-card" data-make="Toyota" data-model="Camry" data-price="33000">
+            <img src="WhatsApp Image 2024-11-05 at 17.55.08.jpeg" alt="Toyota Camry">
+            <h3>PCX 160</h3>
+            <p>HARGA: 36JT</p>
+        </div>
+        <div class="vehicle-card" data-make="Toyota" data-model="Mustang" data-price="15000">
+            <img src="WhatsApp Image 2024-11-05 at 17.55.00.jpeg" alt="Ford Mustang">
+            <h3>STYLO 160</h3>
+            <p>HARGA: 28JT</p>
+        </div>
+        <div class="vehicle-card" data-make="Toyota" data-model="Civic" data-price="12000">
+            <img src="WhatsApp Image 2024-11-05 at 18.01.09.jpeg" alt="Honda Civic">
+            <h3>EMI 9</h3>
+            <p>HARGA: 28JT</p>
+        </div>
+
+        <div class="vehicle-card" data-make="Ford" data-model="Mustang" data-price="45000">
+            <img src="WhatsApp Image 2024-11-05 at 18.17.02.jpeg" alt="Ford Mustang">
+            <h3>All New Ertiga</h3>
+            <p>Harga: 256JT</p>
+        </div>
+        <div class="vehicle-card" data-make="Ford" data-model="Civic" data-price="44000">
+            <img src="WhatsApp Image 2024-11-05 at 18.19.48.jpeg" alt="Honda Civic">
+            <h3>APV</h3>
+            <p>Harga: 231JT</p>
+        </div>
+        <div class="vehicle-card" data-make="Ford" data-model="Mustang" data-price="45000">
+            <img src="WhatsApp Image 2024-11-05 at 18.22.38.jpeg" alt="Ford Mustang">
+            <h3>Baleno</h3>
+            <p>Harga: 285JT</p>
+        </div>
+
+        <div class="vehicle-card" data-make="Honda" data-model="Civic" data-price="22000">
+            <img src="WhatsApp Image 2024-11-05 at 18.54.44.jpeg" alt="Honda Civic">
+            <h3>Rumah Komersil Tipe 86</h3>
+            <p>Harga Spesial</p>
+        </div>
+        <div class="vehicle-card" data-make="Honda" data-model="Mustang" data-price="35000">
+            <img src="WhatsApp Image 2024-11-05 at 18.50.40.jpeg" alt="Ford Mustang">
+            <h3>Rumah Komersil  Tipe 45</h3>
+            <p>Harga Spesial</p>
+        </div>
+        <div class="vehicle-card" data-make="Honda" data-model="Civic" data-price="22000">
+            <img src="WhatsApp Image 2024-11-05 at 18.41.50.jpeg" alt="Honda Civic">
+            <h3>Rumah Komersil di Bulan November</h3>
+            <p>Harga Spesial</p>
+        </div>
+        <!-- Additional vehicle cards here -->
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
